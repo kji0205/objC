@@ -13,6 +13,8 @@
 		BF462DCF23C1F82D009370D7 /* CokeVendingMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = BF462DCE23C1F82D009370D7 /* CokeVendingMachine.m */; };
 		BF592E4623C21DF900CF8E92 /* DescartesCoordinates.m in Sources */ = {isa = PBXBuildFile; fileRef = BF592E4523C21DF900CF8E92 /* DescartesCoordinates.m */; };
 		BF592E4923C21FFA00CF8E92 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF592E4823C21FFA00CF8E92 /* Calculator.m */; };
+		BF592E4D23C227A400CF8E92 /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = BF592E4C23C227A400CF8E92 /* Complex.m */; };
+		BF5ABD6E23C4D1150026735A /* FractionCh07.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5ABD6D23C4D1150026735A /* FractionCh07.m */; };
 		BFE383EF23BCF32B007F0A7B /* Chapter01.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE383EE23BCF32B007F0A7B /* Chapter01.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,10 @@
 		BF592E4523C21DF900CF8E92 /* DescartesCoordinates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescartesCoordinates.m; sourceTree = "<group>"; };
 		BF592E4723C21F2900CF8E92 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		BF592E4823C21FFA00CF8E92 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		BF592E4B23C226E100CF8E92 /* Complex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		BF592E4C23C227A400CF8E92 /* Complex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
+		BF5ABD6C23C4D0AA0026735A /* FractionCh07.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FractionCh07.h; sourceTree = "<group>"; };
+		BF5ABD6D23C4D1150026735A /* FractionCh07.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FractionCh07.m; sourceTree = "<group>"; };
 		BFE383ED23BCF2E5007F0A7B /* Chapter01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chapter01.h; sourceTree = "<group>"; };
 		BFE383EE23BCF32B007F0A7B /* Chapter01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chapter01.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +80,8 @@
 		BF28C84F23AF8A9400368BBD /* objC */ = {
 			isa = PBXGroup;
 			children = (
+				BF5ABD6B23C4D09E0026735A /* Chapter07 */,
+				BF592E4A23C226C500CF8E92 /* Chapter04 */,
 				BFE383EE23BCF32B007F0A7B /* Chapter01.m */,
 				BF28C85023AF8A9400368BBD /* main.m */,
 				BF592E4723C21F2900CF8E92 /* Calculator.h */,
@@ -88,6 +96,24 @@
 				BFE383ED23BCF2E5007F0A7B /* Chapter01.h */,
 			);
 			path = objC;
+			sourceTree = "<group>";
+		};
+		BF592E4A23C226C500CF8E92 /* Chapter04 */ = {
+			isa = PBXGroup;
+			children = (
+				BF592E4B23C226E100CF8E92 /* Complex.h */,
+				BF592E4C23C227A400CF8E92 /* Complex.m */,
+			);
+			path = Chapter04;
+			sourceTree = "<group>";
+		};
+		BF5ABD6B23C4D09E0026735A /* Chapter07 */ = {
+			isa = PBXGroup;
+			children = (
+				BF5ABD6C23C4D0AA0026735A /* FractionCh07.h */,
+				BF5ABD6D23C4D1150026735A /* FractionCh07.m */,
+			);
+			path = Chapter07;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +175,10 @@
 			files = (
 				BFE383EF23BCF32B007F0A7B /* Chapter01.m in Sources */,
 				BF28C85123AF8A9400368BBD /* main.m in Sources */,
+				BF5ABD6E23C4D1150026735A /* FractionCh07.m in Sources */,
 				BF592E4623C21DF900CF8E92 /* DescartesCoordinates.m in Sources */,
 				BF592E4923C21FFA00CF8E92 /* Calculator.m in Sources */,
+				BF592E4D23C227A400CF8E92 /* Complex.m in Sources */,
 				BF4400A723BE4147003A01F4 /* Chapter03.m in Sources */,
 				BF4400AA23C199EB003A01F4 /* Fraction.m in Sources */,
 				BF462DCF23C1F82D009370D7 /* CokeVendingMachine.m in Sources */,
