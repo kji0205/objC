@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define _Chapter 7
+#define _Chapter 15
 
 #import "Chapter01.h"
 #import "CokeVendingMachine.h"
@@ -196,8 +196,88 @@ int main(int argc, const char * argv[]) {
 
 
 #if _Chapter == 15
+#import "AddressCard.h"
+#import "AddressBook.h"
 
 void program15_6();
+
+void program15_10()
+{
+    NSString *aName = @"Julia Kochan";
+    NSString *aEmail = @"jewls337@axlc.com";
+    NSString *bName = @"Tony Iannino";
+    NSString *bEmail = @"tony.iannino@techfitness.com";
+    NSString *cName = @"Stephen Kochan";
+    NSString *cEmail = @"steve@classroomM.com";
+    NSString *dName = @"Jamie Baker";
+    NSString *dEmail = @"jbaker@lassroomM.com";
+    
+    AddressCard *card1 = [[AddressCard alloc] init];
+    AddressCard *card2 = [[AddressCard alloc] init];
+    AddressCard *card3 = [[AddressCard alloc] init];
+    AddressCard *card4 = [[AddressCard alloc] init];
+//
+//    [card1 setName:aName andEmail:aEmail];
+//    [card2 setName:bName andEmail:bEmail];
+////    [card1 setName: aName];
+////    [card1 setEmail: aEmail];
+//    [card1 print];
+//    [card2 print];
+    
+    //주소록 카드를 새로 만든다.
+    AddressBook *myBook = [[AddressBook alloc] initWithName: @"Linda's Address Book"];
+    
+    NSLog(@"Entries in address book after creation: %i", [myBook entries]);
+    
+    // 주소 카드를 네 개 만든다.
+    [card1 setName: aName andEmail: aEmail];
+    [card2 setName: bName andEmail: bEmail];
+    [card3 setName: cName andEmail: cEmail];
+    [card4 setName: dName andEmail: dEmail];
+    
+    AddressCard *myCard;
+    
+    // 주소록에 카드를 추가한다.
+    [myBook addCard: card1];
+    [myBook addCard: card2];
+    [myBook addCard: card3];
+    [myBook addCard: card4];
+    
+    NSLog(@"Entries in address book after adding cards %i", [myBook entries]);
+    
+    // 주소록의 모든 항목을 나열한다.
+    [myBook list];
+    
+    
+    // 이름으로 사람을 찾는다.
+    NSLog(@"Stephen Kochan");
+    myCard = [myBook lookup:@"stephen kochan"];
+    
+    if (myCard != nil) {
+        [myCard print];
+    } else {
+        NSLog(@"Not found!");
+    }
+    
+    // 다른 검색 시도
+    NSLog(@"Haibo Zhang");
+    myCard = [myBook lookup:@"Haibo Zhang"];
+    
+    if (myCard != nil) {
+        [myCard print];
+    } else {
+        NSLog(@"Not found!");
+    }
+    
+    // 주소록에서 항목을 제거한다.
+    NSLog(@"주소록에서 항목을 제거한다.");
+//    myCard = [myBook lookup:@"stephen kochan"];
+    [myBook removeCard: myCard];
+    [myBook list];      // 제거되었는지 확인한다.
+    
+    [myBook sort];
+    [myBook list];
+}
 
 int main(int argc, const char * argv[]) {
 
@@ -280,6 +360,7 @@ int main(int argc, const char * argv[]) {
         
         program15_6();
         
+        program15_10();
     }
     return 0;
 }
@@ -354,5 +435,7 @@ void program15_6()
     
     NSLog(@"%@", mstr);
 }
+
+
 
 #endif
